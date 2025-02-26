@@ -1,13 +1,9 @@
-function checkAge() {
-    // Получаем значения из input
-    let start = parseInt(document.getElementById('start').value);
-    let end = parseInt(document.getElementById('end').value);
-    let age = parseInt(document.getElementById('age').value);
+let age = 20;
+let start = 18;
+let end = 30;
 
-    // Проверка с использованием NOT
-    if (!(age >= start && age <= end)) {
-        document.getElementById('result').innerText = `Значение ${age} принадлежит сегменту [${start} ${end}]`;
-    } else {
-        document.getElementById('result').innerText = `Значение ${age} НЕ принадлежит сегменту [${start} ${end}]`;
-    }
+if(age < start || age > end) {
+    console.log(`Value ${age} does not belong to the segment [${start}, ${end}]`);
+}else{
+    console.log(`Value ${age} belongs to the segment [${start}, ${end}]`);
 }
