@@ -1,19 +1,14 @@
-// Получаем значение от пользователя
 let userInput = prompt("Enter a number:");
 
-// Проверяем, является ли введённое значение числом
-if (!isNaN(userInput)) {
-    let number = Number(userInput); // Преобразуем строку в число
+let number = Number(userInput);
 
-    // Используем if..else для вывода соответствующего значения
-    if (number > 0) {
-        alert("1");
-    } else if (number < 0) {
-        alert("-1");
-    } else {
-        alert("0");
-    }
-} else {
-    // Если введено не число, выводим "Error"
+if (isNaN(number)) {
     alert("Error");
+} else if (number > 0) {
+    alert("1");
+} else if (number < 0) {
+    alert("-1");
+} else {
+    alert("0");
 }
+
