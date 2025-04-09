@@ -8,11 +8,11 @@ function validateLogin() {
         return;
     }
     
-    if (username === "username" && password === "password") {
+    if (username === "Rediska" && password === "123456") {
         result.innerText = `Hello ${username}, your password is correct`;
-    } else if (username === "user") {
+    } else if (username === "Rediska") {
         result.innerText = "Incorrect password";
-    } else {
+    } else if (password === "123456") {
         result.innerText = "Incorrect username";
     }
 }

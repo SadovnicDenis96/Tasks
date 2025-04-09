@@ -3,12 +3,12 @@ function convertNumber() {
     let result;
     
     switch (n) {
-        case 0: result = "Zero"; break;
-        case 1: result = "One"; break;
-        case 2: result = "Two"; break;
-        case 3: result = "Three"; break;
-        case 4: result = "Four"; break;
-        case 5: result = "Five"; break;
+        case 0: result = "Zero";;
+        case 1: result = "One"; ;
+        case 2: result = "Two"; ;
+        case 3: result = "Three"; ;
+        case 4: result = "Four"; ;
+        case 5: result = "Five"; ;
         case 6: result = "Six"; break;
         case 7: result = "Seven"; break;
         case 8: result = "Eight"; break;
